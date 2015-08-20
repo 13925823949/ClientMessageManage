@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+     
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:background="#0099FF"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/request_dispose_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ＜    "
+            android:layout_centerVertical="true"
+            android:textColor="@drawable/selector_textview"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请求处理"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        
+          <TextView
+            android:id="@+id/deleteAddFriendInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:text="删除 "
+            android:textColor="@drawable/selector_textview"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+ <!--        <TextView
+            android:id="@+id/deleteAddFriendInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"aaa
+            android:text="删除"
+            android:textSize="20dp" 
+            android:background="@drawable/selector_textview"/>  --> 
+
+    </RelativeLayout>
+        
+       
+    <TextView
+        android:id="@+id/no_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"   
+        android:text="没有请求数据"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/request_dispose_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relative_layout">
+
+    </ListView>
+
+</RelativeLayout>

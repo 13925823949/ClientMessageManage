@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clientmessagemanage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- Push SDK权限 -->
+    <permission
+        android:name="cn.bmob.permission.push"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <uses-permission android:name="cn.bmob.permission.push" />
+ <!-- 添加自定义的权限 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.clientmessagemanage.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.clientmessagemanage.LogInActivity"
+            android:label="@string/title_activity_log_in" >
+        </activity>
+        <activity
+            android:name="com.example.clientmessagemanage.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.clientmessagemanage.XMBActivity"
+            android:label="@string/title_activity_xmb" >
+        </activity>
+        <activity
+            android:name="com.example.broadsideUI.PersonInfoActivity"
+            android:label="@string/title_activity_broadside_person_info" >
+        </activity>
+        <activity
+            android:name="com.example.broadsideUI.AmendInfoActivity"
+            android:label="@string/title_activity_amend_info" >
+        </activity>
+        <activity
+            android:name="com.example.broadsideUI.AddFriendActivity"
+            android:label="@string/title_activity_add_friend" >
+        </activity>
+        <activity
+            android:name="com.example.broadsideUI.SeeInfoActivity"
+            android:label="@string/title_activity_see_info" >
+        </activity>
+        <activity
+            android:name="com.example.recommendUI.RequestDisposeActivity"
+            android:label="@string/title_activity_request_dispose" >
+        </activity>
+    </application>
+
+</manifest>

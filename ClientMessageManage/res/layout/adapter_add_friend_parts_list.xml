@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/add_friend_layout"
+    android:descendantFocusability= "blocksDescendants" > 
+   <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal" >
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="2"
+      android:orientation="horizontal"  >
+      <ImageView
+        android:id="@+id/head_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/head_man" />
+      
+   <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical"  >   
+    <TextView
+        android:id="@+id/add_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"    
+        android:textSize="18dp"
+        android:text="TextView" />
+    
+    <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/add_name_text"
+      android:orientation="horizontal">
+   <TextView
+     android:id="@+id/add_idhao_text"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"    
+     android:gravity="center_vertical"
+     android:layout_marginLeft="15dp"
+     android:text="id号："
+     android:textSize="12dp" />
+  <TextView
+     android:id="@+id/add_id_text"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:gravity="center_vertical"
+     android:layout_marginLeft="5dp"
+     android:text="id"
+     android:textSize="12dp" />
+       </LinearLayout>
+     </RelativeLayout>
+
+     
+    </LinearLayout>
+     <RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="fill_parent"
+       android:layout_marginRight="10dp" 
+      android:orientation="horizontal"
+       android:layout_weight="1"  >
+  
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:focusable= "false" 
+        android:background="@drawable/fillet_shape_button4"
+        android:text="添加" />
+
+    </RelativeLayout>
+   </LinearLayout>
+
+</LinearLayout>

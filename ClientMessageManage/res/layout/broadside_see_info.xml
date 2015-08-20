@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/person_info_bg" 
+    tools:context=".SeeInfoActivity" >
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#0099FF"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/seeInfoReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:text="＜    "
+            android:textColor="@drawable/selector_textview"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/seeInfoReturn"
+            android:layout_alignBottom="@+id/seeInfoReturn"
+            android:layout_centerHorizontal="true"
+            android:text="查看信息"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/portrait_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        >
+    <com.example.view.CircleImageView
+        android:id="@+id/portrait_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/toux" />
+
+
+
+    <TextView
+        android:id="@+id/see_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/portrait_image"
+        android:text="用户名"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    
+</RelativeLayout>
+<LinearLayout
+        android:id="@+id/linear_lt"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/portrait_rl"
+        android:layout_marginTop="5dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/contacts_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"            
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/see_personal_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:clickable="true" 
+                    android:padding="5px"
+                    android:background="@drawable/frame_textview"
+                    android:text=" 个人信息 "/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remind_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+
+
+                <TextView
+                    android:id="@+id/see_education_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:clickable="true" 
+                    android:padding="5px"
+                    android:background="@drawable/frame_textview"
+                    android:text=" 教育信息 "/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recommend_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/see_profession_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:padding="5px"
+                    android:background="@drawable/frame_textview"
+                    android:clickable="true" 
+                    android:text=" 职业信息 " />
+            </LinearLayout>
+        </RelativeLayout>
+        </LinearLayout>
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@+id/linear_lt"
+       android:orientation="vertical" >
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="8"
+       android:orientation="vertical"  > 
+           
+        <FrameLayout
+            android:id="@+id/content4"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            
+             >
+       </FrameLayout>
+        </LinearLayout>
+        <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2"   >
+        <TextView 
+           android:id="@+id/textview1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="3dp"
+           android:text="共同好友："
+           android:visibility="gone" >            
+        </TextView>
+             
+        <ListView 
+           android:id="@+id/common_friend_list"
+           android:layout_width="match_parent"
+           android:layout_height="fill_parent"
+           android:layout_below="@+id/textview1"
+           android:visibility="gone"
+             >            
+        </ListView>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>    
+</RelativeLayout>

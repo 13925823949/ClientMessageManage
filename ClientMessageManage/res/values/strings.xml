@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClientMessageManage</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_test1">Test1Activity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_xmb">XMBActivity</string>
+    <string name="title_activity_broadside_person_info">PersonInfoActivity</string>
+    <string name="title_activity_amend_info">AmendInfoActivity</string>
+    <string name="title_activity_add_friend">AddFriendActivity</string>
+    <string name="title_activity_see_info">SeeInfoActivity</string>
+    <string name="title_activity_request_dispose">RequestDisposeActivity</string>
+
+</resources>

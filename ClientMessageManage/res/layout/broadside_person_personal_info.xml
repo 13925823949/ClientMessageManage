@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <ScrollView
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+  <LinearLayout 
+    android:layout_marginTop="5.0px"
+	android:layout_marginLeft="15.0px"
+	android:layout_marginRight="15.0px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">    
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="姓名：" />
+
+    <TextView
+        android:id="@+id/show_name"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+</LinearLayout>
+<LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="性别：" />
+
+    <TextView
+        android:id="@+id/show_sex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>
+         <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="年龄：" />
+
+    <TextView
+        android:id="@+id/show_age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>
+            <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="QQ：" />
+
+    <TextView
+        android:id="@+id/show_QQ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>      
+                <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="电话：" />
+
+    <TextView
+        android:id="@+id/show_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>  
+               <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="邮箱：" />
+
+    <TextView
+        android:id="@+id/show_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>   
+                <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="爱好：" />
+
+    <TextView
+        android:id="@+id/show_hobby"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>         
+               <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="籍贯：" />
+
+    <TextView
+        android:id="@+id/show_province"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>
+                 <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="出生日期：" />
+
+    <TextView
+        android:id="@+id/show_dateOfBirth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>
+               <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="联系地址：" />
+
+    <TextView
+        android:id="@+id/show_contactAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>         
+                   <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="婚姻状况：" />
+
+    <TextView
+        android:id="@+id/show_maritalStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>
+               <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="纪念日1：" />
+
+    <TextView
+        android:id="@+id/show_memorial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+    <TextView
+        android:id="@+id/show_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>
+  
+        <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="纪念日2：" />
+
+    <TextView
+        android:id="@+id/show_memorial2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+    <TextView
+        android:id="@+id/show_day2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>
+        <LinearLayout 
+    android:layout_marginTop="2.0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_info_layoutbg"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="纪念日3：" />
+
+    <TextView
+        android:id="@+id/show_memorial3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+    <TextView
+        android:id="@+id/show_day3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="" />
+
+         </LinearLayout>
+               
+      </LinearLayout>             
+    </ScrollView>
+</RelativeLayout>

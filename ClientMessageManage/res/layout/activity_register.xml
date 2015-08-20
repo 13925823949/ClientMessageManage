@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EEE0"
+    tools:context=".RegisterActivity" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#0099FF"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/registerReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:text="＜    "
+            android:textColor="@drawable/selector_textview"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/registerReturn"
+            android:layout_alignBottom="@+id/registerReturn"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8px"
+            android:text="注册页面"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+        <EditText
+        android:id="@+id/rsrUserId"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/fillet_shape"
+        android:ems="10"
+        android:hint="输入账号,长度4-8"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/rsrPassword"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rsrUserId"
+        android:layout_below="@+id/rsrUserId"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fillet_shape"
+        android:ems="10"
+        android:hint="输入密码，长度6-16"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/rsrPassword2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rsrPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fillet_shape"
+        android:ems="10"
+        android:hint="再次输入密码，长度6-16"
+        android:inputType="textPassword" />
+    
+        <EditText
+        android:id="@+id/rsrName"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rsrPassword2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fillet_shape"
+        android:ems="10"
+        android:hint="请输入名字，可更改"
+        android:inputType="text" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="250dip"
+            android:layout_height="30dip"
+            android:layout_alignLeft="@+id/rsrName"
+            android:layout_below="@+id/rsrName"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/fillet_shape_button"
+            android:text="注册" />
+
+</RelativeLayout>

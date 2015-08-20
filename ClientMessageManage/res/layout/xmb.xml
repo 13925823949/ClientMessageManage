@@ -1,0 +1,128 @@
+<com.example.broadsideUI.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".XMBActivity" 
+    android:scrollbars="none"
+    android:fadingEdge="none"
+    android:background="@drawable/broadside"
+    android:id="@+id/mainMenu">
+ 
+
+  <LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="fill_parent"
+   android:orientation="horizontal" >
+       
+    <!-- 菜单布局 -->
+    <include layout="@layout/broadside_menu"/>  
+    
+   <RelativeLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   >
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/xmb_bottom"
+        android:background="#ffffff">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/xmb_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="#B0E0E6" >
+
+        <RelativeLayout
+            android:id="@+id/contacts_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/contacts_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="人脉圈"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remind_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+
+
+                <TextView
+                    android:id="@+id/remind_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="提醒"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recommend_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView 
+                   android:id="@+id/msg_tips_img"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" 
+                   android:layout_alignParentTop="true"
+                   android:layout_toRightOf="@+id/recommend_text"
+                   android:src="@drawable/msg_tips"
+                   android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/recommend_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="推荐"
+                    android:textColor="#82858b" />
+            </RelativeLayout >
+        </RelativeLayout>
+
+        </LinearLayout>
+     
+ 
+ </RelativeLayout>
+</LinearLayout>
+        
+</com.example.broadsideUI.SlidingMenu>
